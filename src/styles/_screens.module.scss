@@ -1,0 +1,6 @@
+@import "./screens";
+
+:export {
+  maxMobileScreenWidth: $max-mobile-screen-width;
+  maxDesktopScreenWidth: $max-desktop-screen-width;
+}
