@@ -1,0 +1,18 @@
+.action-button {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  background-color: transparent;
+  transition: opacity 0.3s;
+
+  & > span {
+    letter-spacing: 0.6px;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../index.scss";
+
+.back-indicator {
+  & > div {
+    border-color: $gray_5;
+  }
+
+  &--danger {
+    path {
+      fill: $red_1_rimac;
+    }
+
+    & > div {
+      border-color: $red_1_rimac;
+    }
+  }
+}
