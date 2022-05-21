@@ -1,0 +1,21 @@
+.login-content-text {
+  display: grid;
+  row-gap: 16px;
+
+  &__title {
+    display: grid;
+    row-gap: 4px;
+  }
+
+  &--mobile {
+    row-gap: 12px;
+  }
+
+  &--mobile &__title {
+    row-gap: 8px;
+
+    & > h1 {
+      letter-spacing: -0.6px;
+    }
+  }
+}

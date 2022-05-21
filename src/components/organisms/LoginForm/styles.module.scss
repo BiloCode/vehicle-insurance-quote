@@ -1,0 +1,31 @@
+.login-form {
+  width: 288px;
+  max-width: 288px;
+  display: grid;
+  row-gap: 24px;
+  grid-auto-rows: max-content;
+
+  &__fields {
+    width: 100%;
+    display: grid;
+    row-gap: 16px;
+  }
+
+  &__checkbox {
+    margin-top: 24px;
+  }
+
+  &__button {
+    width: 192px;
+    margin-top: 40px;
+  }
+
+  &--mobile {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &--mobile &__button {
+    width: 100%;
+  }
+}

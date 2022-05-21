@@ -19,6 +19,10 @@
   &--line-xl {
     line-height: $line-height-xl;
   }
+
+  &--line-2xl {
+    line-height: $line-height-2xl;
+  }
 }
 
 @mixin fonts-class {

@@ -1,0 +1,46 @@
+@import "../index.scss";
+
+.politics-checkbox {
+  display: flex;
+  gap: 12px;
+  user-select: none;
+  align-items: flex-start;
+
+  input {
+    display: none;
+  }
+
+  &__indicator {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background-color: $white;
+    border-radius: $input-radius;
+    border: 1px solid $gray_4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & > * {
+      line-height: 0;
+    }
+
+    & > div {
+      display: none;
+    }
+  }
+
+  input:checked ~ &__indicator {
+    border-color: $green_2;
+    background-color: $green_2;
+
+    & > div {
+      display: inline-block;
+    }
+
+    path {
+      fill: $white;
+    }
+  }
+}

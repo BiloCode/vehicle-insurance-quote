@@ -1,0 +1,28 @@
+@import "../index.scss";
+
+.input-with-option {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  height: $input-height;
+
+  &__select {
+    width: 96px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border-top-left-radius: $input-radius;
+    border-bottom-left-radius: $input-radius;
+    border-top: 1px solid $gray_4;
+    border-left: 1px solid $gray_4;
+    border-bottom: 1px solid $gray_4;
+  }
+
+  & > input {
+    flex-shrink: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

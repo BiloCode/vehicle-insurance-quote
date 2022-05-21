@@ -2,7 +2,6 @@
 
 .input {
   width: 100%;
-  flex-shrink: 0;
   outline: none;
   padding: 16px;
   font-weight: 400;
@@ -18,7 +17,7 @@
   }
 
   &--error {
-    border-color: rgba($red_1_rimac, 0.3);
-    background-color: rgba($red_1_rimac, 0.1);
+    border-color: rgba($red_1_rimac, 0.1);
+    background-color: rgba($red_1_rimac, 0.05);
   }
 }

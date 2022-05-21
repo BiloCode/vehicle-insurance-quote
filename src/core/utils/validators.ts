@@ -9,6 +9,7 @@ const lineHeight = (base: string, css: Styles, lh?: LineHeight) => {
     [css[`${base}--line-lg`]]: lh === "lg",
     [css[`${base}--line-xl`]]: lh === "xl",
     [css[`${base}--line-xs`]]: lh === "xs",
+    [css[`${base}--line-2xl`]]: lh === "2xl",
   };
 };
 

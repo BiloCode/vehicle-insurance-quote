@@ -24,4 +24,9 @@
   &:active {
     background-color: darken($red_1_rimac, 2);
   }
+
+  &:disabled {
+    cursor: initial;
+    background-color: lighten($red_1_rimac, 10);
+  }
 }

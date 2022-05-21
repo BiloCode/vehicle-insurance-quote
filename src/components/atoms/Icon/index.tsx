@@ -1,6 +1,7 @@
 import { ReactSVG } from "react-svg";
 
 import IconAdd from "@/assets/icons/ic_add.svg";
+import IconPhone from "@/assets/icons/ic_phone.svg";
 import IconTheft from "@/assets/icons/ic_theft.svg";
 import IconCheck from "@/assets/icons/ic_check.svg";
 import IconRemove from "@/assets/icons/ic_remove.svg";
@@ -11,6 +12,7 @@ import IconArrowDown from "@/assets/icons/ic_arrow_down.svg";
 import IconPerdidaTotal from "@/assets/icons/ic_perdidatotal.svg";
 
 const Add = () => <ReactSVG src={IconAdd} />;
+const Phone = () => <ReactSVG src={IconPhone} />;
 const Theft = () => <ReactSVG src={IconTheft} />;
 const Check = () => <ReactSVG src={IconCheck} />;
 const Damage = () => <ReactSVG src={IconDamage} />;
@@ -22,6 +24,7 @@ const PerdidaTotal = () => <ReactSVG src={IconPerdidaTotal} />;
 
 export default {
   Add,
+  Phone,
   Theft,
   Check,
   Remove,

@@ -10,7 +10,7 @@ type Props = {
   bold?: boolean;
   fontFamily?: FontFamily;
   lineHeight?: LineHeight;
-  fontSize?: "sm" | "xs" | "md";
+  fontSize?: "sm" | "xs" | "md" | "2xs";
 };
 
 const Text: FC<PropsWithChildren<Props>> = ({
@@ -27,6 +27,7 @@ const Text: FC<PropsWithChildren<Props>> = ({
         [styles["text--sm"]]: fontSize === "sm",
         [styles["text--xs"]]: fontSize === "xs",
         [styles["text--md"]]: fontSize === "md",
+        [styles["text--2xs"]]: fontSize === "2xs",
         ...validators.fonts("text", styles, fontFamily),
         ...validators.lineHeight("text", styles, lineHeight),
       })}

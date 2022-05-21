@@ -1,0 +1,34 @@
+@import "../index.scss";
+
+.login-left-banner {
+  flex-shrink: 0;
+  min-width: 536px;
+  height: 100%;
+  position: relative;
+  background-color: $home_background;
+
+  &__foreground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding-left: $global-separation;
+    padding-top: $navbar-size + 32px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__foreground-content {
+    width: 320px;
+    max-width: 320px;
+    flex-shrink: 0;
+  }
+
+  &__copyright {
+    bottom: 40px;
+    position: absolute;
+    left: $global-separation + $global-grid-column-size;
+  }
+}

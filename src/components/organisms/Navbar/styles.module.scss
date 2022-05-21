@@ -1,0 +1,37 @@
+@import "../index.scss";
+
+.navbar {
+  width: 100%;
+  height: $navbar-size;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0 $global-separation;
+  z-index: 1;
+
+  &__contact,
+  &__contact-number {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact {
+    gap: 20px;
+  }
+
+  &__contact-number {
+    gap: 1px;
+  }
+
+  &--mobile {
+    position: static;
+    padding: 0 $global-separation-mobile;
+
+    &__contact-number {
+      gap: 4px;
+    }
+  }
+}
