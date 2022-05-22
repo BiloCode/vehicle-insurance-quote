@@ -27,6 +27,10 @@
     font-size: $font-size-title-sm;
   }
 
+  &--xs {
+    font-size: $font-size-title-xs;
+  }
+
   @include fonts-class;
   @include line-height-class;
 }

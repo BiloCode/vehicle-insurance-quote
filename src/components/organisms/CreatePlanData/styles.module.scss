@@ -1,0 +1,19 @@
+@import "../index.scss";
+
+.create-plan-data {
+  width: $create-plan-data-size;
+
+  &--price {
+    margin: 10px 0 4px 0;
+  }
+
+  &__separator {
+    margin: 19px 0 24px 0;
+  }
+
+  &__beneficts {
+    margin-bottom: 32px;
+    display: grid;
+    row-gap: 12px;
+  }
+}

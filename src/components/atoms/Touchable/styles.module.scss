@@ -1,0 +1,14 @@
+.touchable {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.3s;
+  background-color: transparent;
+
+  &:active {
+    opacity: 0.6;
+  }
+}

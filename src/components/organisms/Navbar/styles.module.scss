@@ -26,8 +26,16 @@
     gap: 1px;
   }
 
+  &--static,
   &--mobile {
     position: static;
+  }
+
+  &--static {
+    border-bottom: 1px solid $gray_5;
+  }
+
+  &--mobile {
     padding: 0 $global-separation-mobile;
 
     &__contact-number {

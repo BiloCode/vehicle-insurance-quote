@@ -16,6 +16,7 @@
   "rules": {
     "no-alert": "off",
     "no-undef": "off",
+    "dot-notation": "off",
     "no-unused-vars": "off",
     "arrow-body-style": "off",
     "import/extensions": "off",

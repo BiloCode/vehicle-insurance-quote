@@ -8,13 +8,15 @@ import Color from "@/components/atoms/Color";
 import Image from "@/components/atoms/Image";
 
 type Props = {
+  isStatic?: boolean;
   isMobile?: boolean;
 };
 
-const Navbar: FC<Props> = ({ isMobile }) => {
+const Navbar: FC<Props> = ({ isStatic, isMobile }) => {
   return (
     <nav
       className={classNames(styles.navbar, {
+        [styles["navbar--static"]]: isStatic,
         [styles["navbar--mobile"]]: isMobile,
       })}
     >

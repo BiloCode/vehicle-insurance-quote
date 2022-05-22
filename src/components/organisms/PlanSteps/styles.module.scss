@@ -1,0 +1,24 @@
+@import "../index.scss";
+
+.steps {
+  display: grid;
+  position: relative;
+  row-gap: 44px;
+
+  &__item {
+    display: flex;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+    background-color: $gray_7;
+  }
+
+  &__vertical-bar {
+    position: absolute;
+    left: 12px;
+    width: 1px;
+    height: 100%;
+    z-index: 0;
+    border: 1px dashed $gray_5;
+  }
+}

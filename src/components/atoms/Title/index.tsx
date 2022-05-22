@@ -10,7 +10,7 @@ import { LineHeight } from "@/core/types/LineHeight";
 type Props = {
   fontFamily?: FontFamily;
   lineHeight?: LineHeight;
-  fontSize?: "sm" | "md" | "lg" | "xl" | "2xl";
+  fontSize?: "sm" | "md" | "lg" | "xl" | "2xl" | "xs";
 };
 
 const Title: FC<PropsWithChildren<Props>> = ({
@@ -19,14 +19,13 @@ const Title: FC<PropsWithChildren<Props>> = ({
   lineHeight,
   fontFamily,
 }) => {
-  // console.log(validators.lineHeight("title", styles, lineHeight));
-
   return (
     <h1
       className={classNames(styles.title, {
         [styles["title--lg"]]: fontSize === "lg",
         [styles["title--xl"]]: fontSize === "xl",
         [styles["title--md"]]: fontSize === "md",
+        [styles["title--xs"]]: fontSize === "xs",
         [styles["title--sm"]]: fontSize === "sm",
         [styles["title--2xl"]]: fontSize === "2xl",
         ...validators.fonts("title", styles, fontFamily),

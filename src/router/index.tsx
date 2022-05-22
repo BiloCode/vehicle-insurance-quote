@@ -4,6 +4,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useUserContext } from "@/store/UserContext/context";
 
 import Login from "@/components/pages/Login";
+import CreatePlanPage from "@/components/pages/CreatePlan";
 
 const Router: FC = () => {
   const { userData } = useUserContext();
@@ -18,7 +19,7 @@ const Router: FC = () => {
       )}
       {userData && (
         <Routes>
-          <Route path="/create-plan" />
+          <Route path="/create-plan" element={<CreatePlanPage />} />
           <Route path="/thanks" />
           <Route path="*" element={<Navigate to="/create-plan" />} />
         </Routes>

@@ -1,0 +1,27 @@
+@import "../index.scss";
+
+.plan-contribution-range {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  column-gap: 44px;
+
+  &__text {
+    display: grid;
+    row-gap: 4px;
+
+    &--bottom {
+      gap: 8px;
+      display: flex;
+      justify-content: space-between;
+
+      & > * {
+        flex-shrink: 0;
+      }
+
+      & > p {
+        letter-spacing: 0.6px;
+      }
+    }
+  }
+}

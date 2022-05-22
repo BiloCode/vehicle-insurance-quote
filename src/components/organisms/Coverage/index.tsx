@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 import styles from "./styles.module.scss";
 
 import useBoolean from "@/hooks/useBoolean";
@@ -55,4 +55,4 @@ Coverage.defaultProps = {
   defaultContentShow: false,
 };
 
-export default Coverage;
+export default memo(Coverage);
