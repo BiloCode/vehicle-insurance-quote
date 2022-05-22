@@ -1,5 +1,11 @@
+@import "../index.scss";
+
 .plan-coverage-section {
   &__tabs {
     margin-top: 8px;
+  }
+
+  &--mobile &__title {
+    padding: 0 $global-separation-mobile;
   }
 }

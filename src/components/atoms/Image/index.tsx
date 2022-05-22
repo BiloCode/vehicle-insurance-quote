@@ -1,5 +1,6 @@
 import PageLogo from "@/assets/images/logo.svg";
 
+import ThanksPageBackground from "@/assets/images/thanks.svg";
 import HomePageBackground from "@/assets/images/background.svg";
 
 import PagePersonA from "@/assets/images/person_a.svg";
@@ -29,10 +30,15 @@ const PersonC = () => (
   <img src={PagePersonC} draggable="false" alt="person-c" />
 );
 
+const ThanksBackground = () => (
+  <img src={ThanksPageBackground} draggable="false" alt="person-c" />
+);
+
 export default {
   Logo,
   PersonA,
   PersonAMobile,
+  ThanksBackground,
   PersonB,
   PersonC,
   Background,

@@ -24,4 +24,14 @@
       }
     }
   }
+
+  &--mobile {
+    column-gap: 0;
+    row-gap: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  &--mobile &__text {
+    width: 190px;
+  }
 }
