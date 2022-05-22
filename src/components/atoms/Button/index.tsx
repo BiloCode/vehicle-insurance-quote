@@ -2,6 +2,7 @@ import { FC, PropsWithChildren } from "react";
 import styles from "./styles.module.scss";
 
 type Props = {
+  onClick?(): void;
   loading?: boolean;
   disabled?: boolean;
   type?: "submit" | "button";
@@ -9,6 +10,7 @@ type Props = {
 
 const Button: FC<PropsWithChildren<Props>> = ({
   type,
+  onClick,
   loading,
   disabled,
   children,
@@ -16,6 +18,7 @@ const Button: FC<PropsWithChildren<Props>> = ({
   return (
     <button
       type={type}
+      onClick={onClick}
       className={styles.button}
       disabled={loading || disabled}
     >

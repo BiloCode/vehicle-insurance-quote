@@ -64,4 +64,15 @@
   &__coverage {
     margin-top: 55px;
   }
+
+  /** RESPONSIVE **/
+
+  &--mobile &__center {
+    width: 100%;
+  }
+
+  &--mobile &__card {
+    box-sizing: border-box;
+    padding: $global-separation-mobile;
+  }
 }

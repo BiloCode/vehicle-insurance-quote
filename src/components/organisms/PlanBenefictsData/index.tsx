@@ -1,5 +1,7 @@
 import styles from "./styles.module.scss";
 
+import useAppNavigation from "@/hooks/useAppNavigation";
+
 import Text from "@/components/atoms/Text";
 import Color from "@/components/atoms/Color";
 import Title from "@/components/atoms/Title";
@@ -7,7 +9,9 @@ import Button from "@/components/atoms/Button";
 import Separator from "@/components/atoms/Separator";
 import PlanBeneficts from "@/components/molecules/PlanBeneficts";
 
-const CreatePlanData = () => {
+const PlanBenefictsData = () => {
+  const { navigateTo } = useAppNavigation();
+
   return (
     <div className={styles["create-plan-data"]}>
       <div>
@@ -34,9 +38,9 @@ const CreatePlanData = () => {
           <PlanBeneficts text="Aros gratis" />
         </div>
       </div>
-      <Button>LO QUIERO</Button>
+      <Button onClick={navigateTo("/thanks")}>LO QUIERO</Button>
     </div>
   );
 };
 
-export default CreatePlanData;
+export default PlanBenefictsData;
