@@ -10,6 +10,8 @@ Estos pre requisitos son indispensables para el desarrollo de la aplicacion:
 
 - [Yarn](https://yarnpkg.com) - Manejador de dependencias
 - [Node](https://nodejs.org/en/) - Entorno de desarrollo
+- [Prettier](https://prettier.io/) - Formateador de codigo
+- [Eslint](https://eslint.org/) - Herramienta de análisis de código estático
 
 <br>
 
