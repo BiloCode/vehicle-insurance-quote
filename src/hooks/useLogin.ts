@@ -52,14 +52,14 @@ const useLogin = () => {
   const onSubmit: SubmitHandler<FieldValues> = async (values) => {
     loadingEvents.on();
 
-    const { dni } = values as FormData;
+    const { dni, placa } = values as FormData;
 
     const firstNumber = Number(dni.split("")[0]);
     const fakeUserId = Math.min(firstNumber, 100);
 
     try {
       const data = await getUserData(fakeUserId);
-      onChangeUserData(data);
+      onChangeUserData({ ...data, carLicensePlate: placa });
     } catch (error) {
       alert((error as Error).message);
     } finally {
