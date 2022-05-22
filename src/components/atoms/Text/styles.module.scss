@@ -1,0 +1,32 @@
+@import "../index.scss";
+
+.text {
+  margin: 0;
+  font-weight: 400;
+  color: $gray_2_paragraph;
+  font-family: $font-lato;
+  line-height: $line-height-md;
+
+  &--md {
+    font-size: $font-size-regular-md;
+  }
+
+  &--sm {
+    font-size: $font-size-regular-sm;
+  }
+
+  &--xs {
+    font-size: $font-size-regular-xs;
+  }
+
+  &--2xs {
+    font-size: $font-size-regular-2xs;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  @include fonts-class;
+  @include line-height-class;
+}

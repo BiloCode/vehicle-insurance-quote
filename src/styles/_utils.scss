@@ -1,0 +1,34 @@
+@import "./text";
+@import "./fonts";
+
+@mixin line-height-class {
+  line-height: $line-height-md;
+
+  &--line-xs {
+    line-height: $line-height-xs;
+  }
+
+  &--line-sm {
+    line-height: $line-height-sm;
+  }
+
+  &--line-lg {
+    line-height: $line-height-lg;
+  }
+
+  &--line-xl {
+    line-height: $line-height-xl;
+  }
+
+  &--line-2xl {
+    line-height: $line-height-2xl;
+  }
+}
+
+@mixin fonts-class {
+  font-family: $font-lato;
+
+  &--roboto {
+    font-family: $font-roboto;
+  }
+}

@@ -1,0 +1,8 @@
+.plan-user-text {
+  display: grid;
+  row-gap: 8px;
+
+  & > h1 {
+    letter-spacing: -0.6px;
+  }
+}

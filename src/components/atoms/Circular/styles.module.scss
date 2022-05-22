@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@import "../index.scss";
+
+$size: 24px;
+
+.circular-container {
+  width: $size;
+  height: $size;
+  color: $gray_4;
+  display: flex;
+  align-items: center;
+  border-color: $gray_4;
+  justify-content: center;
+  border: 1px solid $gray_4;
+  background-color: transparent;
+  border-radius: math.div($size, 2);
+}

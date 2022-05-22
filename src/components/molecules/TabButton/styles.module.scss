@@ -1,0 +1,35 @@
+@import "../index.scss";
+
+.tab-button {
+  width: 128px;
+  margin: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 24px 12px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+
+  & > * {
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: rgba($red_1_rimac, 0.03);
+  }
+
+  &--active {
+    cursor: initial;
+    border-color: $red_1_rimac;
+
+    & > * {
+      color: $red_1_rimac;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

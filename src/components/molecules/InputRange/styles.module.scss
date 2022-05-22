@@ -1,0 +1,16 @@
+@import "../index.scss";
+
+.input-range {
+  width: 160px;
+  min-width: 160px;
+  height: $input-height;
+  border-radius: $input-radius * 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $gray_4;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 16px;
+  user-select: none;
+}

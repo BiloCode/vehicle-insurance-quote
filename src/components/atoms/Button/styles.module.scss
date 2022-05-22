@@ -1,0 +1,32 @@
+@import "../index.scss";
+
+.button {
+  width: 100%;
+  outline: none;
+  color: $white;
+  cursor: pointer;
+  padding: 0 32px;
+  font-weight: 700;
+  height: $input-height;
+  letter-spacing: 0.8px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  line-height: $line-height-sm;
+  border: 1px solid $red_1_rimac;
+  background-color: $red_1_rimac;
+  font-size: $font-size-regular-md;
+  border-radius: $input-radius * 2;
+
+  &:hover {
+    background-color: lighten($red_1_rimac, 2);
+  }
+
+  &:active {
+    background-color: darken($red_1_rimac, 2);
+  }
+
+  &:disabled {
+    cursor: initial;
+    background-color: lighten($red_1_rimac, 10);
+  }
+}

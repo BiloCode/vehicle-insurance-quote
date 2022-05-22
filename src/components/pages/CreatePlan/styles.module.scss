@@ -1,0 +1,67 @@
+@import "../index.scss";
+
+.create-plan-page {
+  width: 100%;
+  height: 100%;
+
+  &__content {
+    width: inherit;
+    height: calc(100% - $navbar-size);
+    display: flex;
+
+    & > * {
+      flex-shrink: 0;
+    }
+  }
+
+  &__steps {
+    width: $create-plan-steps-size;
+    padding: 52px 0;
+    box-sizing: border-box;
+    background-color: $gray_7;
+    padding-left: $global-separation;
+  }
+
+  &__center {
+    width: auto;
+    height: 100%;
+    flex-grow: 1;
+    overflow: auto;
+    padding: 48px 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__data {
+    flex-shrink: 0;
+    padding: 189px (($global-grid-column-size * 2) + $global-separation);
+  }
+
+  /** OTHERS **/
+
+  &__user {
+    margin-top: 24px;
+  }
+
+  &__card {
+    margin-top: 44px !important;
+
+    &--input-range {
+      margin-top: 55px;
+    }
+
+    &--separator {
+      margin-top: 43px;
+    }
+  }
+
+  &__coverage {
+    margin-top: 55px;
+  }
+}

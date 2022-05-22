@@ -1,0 +1,23 @@
+@import "../index.scss";
+
+.input {
+  width: 100%;
+  outline: none;
+  padding: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  border: 1px solid $gray_4;
+  color: $gray_1_titulos;
+  height: $input-height;
+  border-radius: $input-radius;
+  font-size: $font-size-regular-md;
+
+  &::placeholder {
+    color: $gray_3;
+  }
+
+  &--error {
+    border-color: rgba($red_1_rimac, 0.1);
+    background-color: rgba($red_1_rimac, 0.05);
+  }
+}

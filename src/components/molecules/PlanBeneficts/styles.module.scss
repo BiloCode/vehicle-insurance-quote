@@ -1,0 +1,10 @@
+.plan-beneficts {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+
+  & > * {
+    flex-grow: 0;
+  }
+}

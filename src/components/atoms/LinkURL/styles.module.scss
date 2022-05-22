@@ -1,0 +1,11 @@
+@import "../index.scss";
+
+.link {
+  cursor: pointer;
+  margin: 0 3px;
+  box-sizing: border-box;
+
+  &:visited {
+    color: $gray_2_paragraph;
+  }
+}

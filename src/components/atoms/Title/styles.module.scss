@@ -1,0 +1,36 @@
+@import "../index.scss";
+
+.title {
+  margin: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+  letter-spacing: -0.2px;
+  color: $gray_1_titulos;
+
+  &--2xl {
+    font-size: $font-size-title-2xl;
+  }
+
+  &--xl {
+    font-size: $font-size-title-xl;
+  }
+
+  &--lg {
+    font-size: $font-size-title-lg;
+  }
+
+  &--md {
+    font-size: $font-size-title-md;
+  }
+
+  &--sm {
+    font-size: $font-size-title-sm;
+  }
+
+  &--xs {
+    font-size: $font-size-title-xs;
+  }
+
+  @include fonts-class;
+  @include line-height-class;
+}

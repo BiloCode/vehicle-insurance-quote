@@ -1,15 +1,17 @@
+@import "./text";
+@import "./fonts";
 @import "./colors";
 @import "./screens";
 
 $input-radius: 4px;
 $input-height: 56px;
 
-$font-size-title-md: 20px;
-$font-size-title-lg: 24px;
-$font-size-title-xl: 28px;
-$font-size-title-2xl: 36px;
-$font-size-title-3xl: 40px;
+$navbar-size: 64px;
 
-$font-size-regular-md: 16px;
-$font-size-regular-sm: 14px;
-$font-size-regular-xs: 12px;
+$global-separation: 88px;
+$global-separation-mobile: 32px;
+$global-grid-column-size: 22px;
+
+$create-plan-steps-size: 408px;
+$create-plan-center-size: 0px;
+$create-plan-data-size: 223px;

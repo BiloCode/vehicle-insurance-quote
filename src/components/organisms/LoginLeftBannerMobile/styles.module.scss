@@ -1,0 +1,24 @@
+@import "../index.scss";
+
+.login-left-banner-mobile {
+  display: flex;
+  height: 252px;
+  position: relative;
+  background-color: $gray_7;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: $global-separation-mobile;
+
+  &__text {
+    width: 200px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: -24px;
+    z-index: 0;
+  }
+}

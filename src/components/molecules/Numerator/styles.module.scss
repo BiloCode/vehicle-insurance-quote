@@ -1,0 +1,8 @@
+@import "../index.scss";
+
+.numerator {
+  &--active > div {
+    border-color: $acian_2_hover;
+    background-color: $acian_2_hover;
+  }
+}
